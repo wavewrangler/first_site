@@ -1,0 +1,573 @@
+ http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}/*
+HTML5 display-role reset for older browsers
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+*/
+body {
+	position: absolute;
+	top: 0px;
+	background-image: url("../images/cork-board.jpg");
+	margin:0px;
+	padding:0px;
+	display: block;
+}
+	/*https://www.publicdomainpictures.net/pictures/30000/velka/cork-board.jpg*/
+	/*im this above because ../ because:
+	Starting with "/" returns to the root directory and starts there
+Starting with "../" moves one directory backwards and starts there
+Starting with "../../" moves two directories backwards and starts there (and so on...)
+To move forward, just start with the first subdirectory and keep moving forward
+*/
+
+nav{
+	position: absolute;
+	/*top:0px;
+	left: 0px;
+	margin-top: 0px;*/
+	width:100%;
+	height:10vh;
+	background: #8b5a2b;
+
+}
+
+#nav-container{
+width: 90%;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+list-style: none;
+}
+
+#nav-container > li a{
+	margin-top:0px;
+	vertical-align: center;
+	background: #ffa54f;
+	padding: 5px 10px 5px 10px;
+	width: 50px;
+	font-family: helvetica;
+	font-weight: bold;
+	font-size: 2vw;
+	color: #cd8500;
+	line-height:5vh;
+	border-radius: 5px;
+	text-decoration: none;
+	border: solid #a0522d 5px;
+
+}
+#nav-container > li a:hover{
+	color:#8b4513 ;
+	border-radius: 0px;
+	text-decoration: underline;
+}
+
+
+#pinbox{
+	display: flex;
+	flex-direction: column;
+	width:35%;
+	margin-right: auto;
+}
+#pinbox > div{
+	height: 25px;
+	width: 25px;
+	border-radius: 50px;
+	background:green;
+	margin-top: 150px;
+
+}
+
+
+
+
+#flex, #flexbox1, #flexbox2, #flexbox3{
+	display:flex;
+	margin-top:100px;
+	border:solid #8b5a2b 10px;
+	border-radius: 3px;
+	align-items:stretch;
+	flex-direction: column;
+	margin-left: auto;
+	margin-right: auto;
+	width: 65%;
+}
+
+#flex{
+	margin-top: 150px;
+}
+#flex, #flexbox1, #flexbox2, #flexbox3 > div{
+	font-family: helvetica;
+	font-weight: bold;
+	font-size: 1.5vw;
+	color: #3d2700;
+	background: #ebce99;
+	border-radius: 10px;
+	flex-basis: 20px;
+	
+}
+p li{
+	font-size: 2vw;
+	background:#ebce99;
+	color:#664200;
+	
+}
+#byxmass{
+
+}
+h3{
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+	line-height: 1;
+	background-color: #f2f5f9
+	background-color: #ffd;
+	background-image:
+	linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+	linear-gradient(#eee .1em, transparent .1em);
+	background-size: 100% 1.2em;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+h1 {
+	
+	font-size: 3.5em;
+	font-family: "helvetica";
+	font-weight: bold;
+	position: absolute;
+	color: #741;
+	padding-top: 4px;
+	margin-top:-12px;
+	border-style: inset;
+	display:inline;
+    	
+
+}
+
+#planning{
+	width: 15% ;
+	height:auto;
+	float: right;
+	position: relative;
+	bottom:170px;
+	z-index: 1;
+}
+nav{
+	position:fixed;
+	width:100%;
+	padding: 0px;
+	height: 40px 	;
+	z-index: 2;
+	vertical-align: bottom;
+}
+
+nav, .jumplinks {
+    list-style-type: none;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #AF754FFF;
+	#233;
+    *position: fixed;
+    z-index: 2;
+    text-align: center;
+	height: 40px;
+	vertical-align: bottom;
+}
+nav, .listlinks, .jumplinks{
+    float: left;
+    display: inline;
+    margin:0px;
+    padding-top: 2px;
+	vertical-align: bottom;
+	margin-top: 0px;
+	height:40px;
+    
+}
+
+nav .jumplinks .listlinks a {
+	font-size: 1.5em;
+    /*display: flex;
+    color: white;
+    text-align: center;
+	padding-left: 10px; 179px;
+	padding-right:10px;
+	text-decoration: none;
+	height: 40px;
+	vertical-align: bottom;
+	
+    flex-direction: row;
+
+}
+
+/* Change the link color to #111 (black) on hover
+li a:hover {
+	background-color: #111;
+	height:40px;
+    /*position: relative;*/
+
+
+
+
+/*
+#STG {
+	font-size: 2.9em;
+	font-family: Lobster ;
+	color: black;
+	padding-top: 450px;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+}
+
+#autumn {
+	font-size: 2.5em;
+	font-family: helvetica;
+	text-align: center;
+	top: 50px;
+	z-index: 1;
+	width:575px;
+	text-decoration: underline;
+	position:relative;
+	margin: auto;
+}
+/*
+#autumn {
+	animation-name: autumn;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+@keyframes autumn {
+	0% {background-color: rgb(184, 112, 19);
+
+	}
+	25% {
+		background-color: rgb(243, 120, 4);
+	}
+	50% {
+		background-color: rgb(172, 142, 11);
+		color: hsl(92, 52%, 88%);
+	}
+	100% {
+		background-color: #AF754FFF;
+	}
+}
+     
+
+#autumn {
+	animation-fill-mode: forward;
+}
+
+
+
+
+#typing-skills {
+	position: relative;
+	top: 125px;
+	left:320px;
+	z-index: 1;
+	font-size: 30px;
+	font-family: arial;
+	color:black;
+}
+#byxmass{
+	text-align: left;
+	width: 1120px;
+	text-align: cente;
+	position:relative;
+	top:150px;
+	left: 320px;
+	z-index: 1;
+	font-size: 27px;
+}
+
+#coding {
+	position: relative;
+	top: 250px;
+	left: 320px;
+	z-index: 1;
+	font-size:30px;
+}
+#coding {
+	color: #9C9C58FA;
+	font-size: 30px;
+	font-family: arial;
+}
+.p2 {
+	position:relative;
+	font-size: 27px;
+	top: 270px;
+	left: 320px;
+	width: 1120px;
+	z-index: 1;
+}
+
+
+ul.vert-list {
+	width: 60%;
+	padding-top: 310px;
+	margin: auto;
+	text-align: left;
+	list-style-type: circle;
+	list-style-position: inside;
+	font-family: helvetica;
+	font-size: 1.5em;
+	color: #AB8949FF;
+	z-index: 1;
+	position: relative;
+}
+
+
+ li.a {
+	position: inline-block;
+	z-index: 1;
+	color: #AB8949FF;
+}
+li.a:hover {
+	font-size: 1.2em;
+
+}
+
+
+.css-link {
+	color:#AB8949FF;
+}
+
+.math {
+	position: relative;
+	top: 60px;
+	left: 320px;
+	z-index: 1;
+	font-size: 30px;
+	font-family: arial;
+	color: #9C9C58FA
+}
+
+#check-marks {
+		color:#AB8949FF;
+}
+
+
+.p3 {
+	position:relative;
+	font-size: 27px;
+	top: 80px;
+	left: 320px;
+	width: 1120px;
+	z-index: 1;
+
+}
+
+#LTG {
+	font-size: 2.9em;
+	font-family: Lobster ;
+	padding-top: 290px;
+    text-align: center;
+    position: relative;
+    color:tan;
+}
+p {
+    font-size: 27px;
+   
+  }
+
+.p4 {
+	position:relative;
+	top: 80px;
+	width: 1120px;
+	left: 320px;
+}
+.five-years{
+	position: relative;
+	top: 60px;
+	left: 320px;
+	z-index: 1;
+	font-size: 30px;
+	font-family: arial;
+	color: #9C9C58FA
+}
+	
+
+#bottom {
+	position:relative;
+	top: 190px;
+	text-align: center;
+}
+.goals-list {
+	position:relative;
+	margin:auto;
+	width: 60%;
+	top: 120px;
+	list-style-position: inside;
+	list-style-type: circle;
+	color: #AB8949FF;
+	font-family: helvetica;
+	font-size: 1.5em;
+}
+
+
+li.b:hover{
+	font-size:1.2em;
+}
+
+#bottom {
+	font-size: 2.9em;
+	font-family: Lobster ;
+	padding-top: 290px;
+    text-align: center;
+    position: relative;
+    color: tan;
+
+https://www.publicdomainpictures.net/pictures/30000/velka/cork-board.jpg*/
+	/*this abhasove  a ../ because:
+	Starting with "/" returns to the root directory and starts there
+Starting with "../" moves one directory backwards and starts there
+Starting with "../../" moves two directories backwards and starts there (and so on...)
+To move forward, just start with the first subdirectory and keep moving forward*/
+/*}
+
+.nav-container{
+	display:grid;
+	grid-template-columns: auto auto auto auto;
+	padding: 10px;
+}
+
+.li-a, .nav-link{
+color:black;
+font-weight:bold;
+display: block;
+height: 75px;
+backgroud: lightgreen;
+}
+/*^^ above, if you change display of .nav-link to block, the part that is hyperlinked becomes much greater, and appears to take the whole space of the element, this is what I was going for. massage it, to get it right.*/
+/*
+#STG{
+	border-width: 2px;
+	height: ;
+	border-color: black;
+	border-style: solid;
+	font-size: 5vw;
+	font-family: Lobster ;
+	color: black;
+	padding-top: 0;
+    text-align: left;
+	z-index: 1;
+	position: relative;
+	
+}
+.li-a{
+	list-style-type: none;
+}
+
+*/
